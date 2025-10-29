@@ -250,12 +250,15 @@ const Contact = () => {
           border: 3px solid rgba(0, 245, 255, 0.3);
           box-shadow: 0 4px 20px rgba(0, 245, 255, 0.2);
           position: relative;
+          aspect-ratio: 1 / 1;
+          flex: 0 0 auto; /* prevent flex squashing on mobile */
         }
         
         .profile-image {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          display: block;
           transition: transform 0.3s ease;
         }
         
@@ -561,6 +564,23 @@ const Contact = () => {
           .expertise-grid {
             grid-template-columns: 1fr;
           }
+          /* Avatar takes 30% of the left header section width on mobile */
+          .header-left { width: 100%; }
+          .profile-avatar { width: 30%; height: auto; aspect-ratio: 1 / 1; }
+          .profile-info { flex: 1; min-width: 0; }
+          /* Companies grid: 2 per row and smaller logos */
+          .companies-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.75rem;
+          }
+          .company-item { gap: 0.4rem; }
+          .company-logo,
+          .company-logo-fallback {
+            width: 100%;
+            height: 68px;
+            border-radius: 8px;
+          }
+          .company-name { font-size: 0.8rem; }
         }
       `}</style>
     </section>
