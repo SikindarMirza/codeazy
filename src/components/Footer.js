@@ -29,7 +29,7 @@ const Footer = () => {
               <h3>{section.title}</h3>
               <ul>
                 {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}><a href="#">{link}</a></li>
+                  <li key={linkIndex}><a href="/">{link}</a></li>
                 ))}
               </ul>
             </div>
