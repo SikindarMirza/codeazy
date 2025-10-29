@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// Removed useNavigate import
 
 const CourseCard = ({ course, delay = 0, onClick }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,6 +22,7 @@ const CourseCard = ({ course, delay = 0, onClick }) => {
     >
       <div className="course-image" style={{ background: course.logoBackground }}>
         <div className="hover-hint">Click to view details</div>
+        <span className="click-label" aria-hidden="true">Click to view details</span>
         {course.icon && <span className="course-icon-emoji">{course.icon}</span>}
         {course.logoUrl && <img src={course.logoUrl} alt={course.title} />}
         {!course.icon && !course.logoUrl && course.logoName && (
@@ -75,6 +75,25 @@ const CourseCard = ({ course, delay = 0, onClick }) => {
         }
         .course-card.hovered .hover-hint {
           opacity: 1;
+        }
+        .click-label {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          background: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          font-size: 0.7rem;
+          font-weight: 600;
+          padding: 0.3rem 0.5rem;
+          border-radius: 6px;
+          pointer-events: none;
+          display: none; /* hidden by default (desktop) */
+        }
+
+        /* Mobile-specific visibility: show label, hide hover overlay */
+        @media (max-width: 768px) {
+          .hover-hint { display: none; }
+          .click-label { display: inline-block; }
         }
         .course-logo-text {
           font-size: 3rem;
