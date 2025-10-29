@@ -190,7 +190,7 @@ const Contact = () => {
           font-size: 3rem;
           font-weight: 800;
           margin-bottom: 1rem;
-          background: linear-gradient(90deg, #00f5ff 0%, #ff00f5 100%);
+          background: #fff;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
