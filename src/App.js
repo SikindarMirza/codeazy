@@ -283,21 +283,10 @@ const App = () => {
           font-size: 3rem;
           font-weight: 800;
           margin-bottom: 3rem;
+          color: #ffffff;
+          letter-spacing: 0.4px;          
         }
-        .section-title-gradient {
-          background: linear-gradient(90deg, #00FFB0 0%, #FF6B00 40%, #A259FF 70%, #FFF500 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          filter: drop-shadow(0 2px 8px rgba(255,255,255,0.2));
-        }
-        .section-title-codeazy {
-          background: linear-gradient(90deg, #00f5ff 0%, #ff00f5 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          filter: drop-shadow(0 2px 8px rgba(255,255,255,0.2));
-        }
+
         .features-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
