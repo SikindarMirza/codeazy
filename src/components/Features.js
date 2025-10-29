@@ -39,19 +39,13 @@ const Features = () => {
       description: 'Work on live projects and applications to gain hands-on experience that employers value.',
       delay: 600
     }
-    // {
-    //   icon: '🏆',
-    //   title: 'Certificates',
-    //   description: 'Earn industry-recognized certificates upon completion to showcase your skills to employers.',
-    //   delay: 600
-    // }
   ];
 
   return (
     <section className="features" id="about">
       <div className="container">
         <h2 className="section-title">
-          <span className="section-title-gradient">Why</span> <span className="section-title-gradient">Choose</span> <span className="section-title-codeazy">Codeazy</span>?
+          Why Choose Codeazy?
         </h2>
         <div className="features-grid">
           {features.map((feature, index) => (
