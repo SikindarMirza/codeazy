@@ -12,6 +12,8 @@ const CourseCard = ({ course, delay = 0, onClick }) => {
     return () => clearTimeout(timer);
   }, [delay]);
 
+  const hasDetails = !!course.curriculumData;
+
   return (
     <div 
       className={`course-card ${isVisible ? 'visible' : ''} ${isHovered ? 'hovered' : ''}`}
@@ -21,8 +23,8 @@ const CourseCard = ({ course, delay = 0, onClick }) => {
       style={{ cursor: 'pointer' }}
     >
       <div className="course-image" style={{ background: course.logoBackground }}>
-        <div className="hover-hint">Click to view details</div>
-        <span className="click-label" aria-hidden="true">Click to view details</span>
+        {hasDetails && <div className="hover-hint">Click to view details</div>}
+        {hasDetails && <span className="click-label" aria-hidden="true">Click to view details</span>}
         {course.icon && <span className="course-icon-emoji">{course.icon}</span>}
         {course.logoUrl && <img src={course.logoUrl} alt={course.title} />}
         {!course.icon && !course.logoUrl && course.logoName && (
