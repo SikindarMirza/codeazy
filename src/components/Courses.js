@@ -1,6 +1,6 @@
 import React from 'react';
 import CourseCard from './CourseCard';
-import { HTMLCurriculumData, CSSCurriculumData, JavaScriptCurriculumData, ReactCurriculumData, GitCurriculumData } from './CurriculumData';
+import { HTMLCurriculumData, CSSCurriculumData, JavaScriptCurriculumData, ReactCurriculumData, GitCurriculumData, NodeCurriculumData, MongoDBCurriculumData } from './CurriculumData';
 
 const Courses = ({ onCourseClick }) => {
   const courses = [
@@ -49,12 +49,34 @@ const Courses = ({ onCourseClick }) => {
       logoName: 'React'
     },
     {
+      level: 'Intermediate',
+      title: 'Node.js Backend Development',
+      description: 'Build powerful server-side applications with Node.js. Learn Express, APIs, databases, and deployment.',
+      price: 99,
+      duration: '14 weeks',
+      delay: 125,
+      curriculumData: NodeCurriculumData,
+      logoBackground: 'linear-gradient(135deg, #339933 0%, #68a063 100%)',
+      logoName: 'Node.js'
+    },
+    {
+      level: 'Intermediate',
+      title: 'MongoDB Database Mastery',
+      description: 'Master NoSQL databases with MongoDB. Learn CRUD operations, data modeling, aggregation, and Mongoose integration.',
+      price: 89,
+      duration: '10 weeks',
+      delay: 150,
+      curriculumData: MongoDBCurriculumData,
+      logoBackground: 'linear-gradient(135deg, #47a248 0%, #589636 100%)',
+      logoName: 'MongoDB'
+    },
+    {
       level: 'Beginner',
       title: 'Git & Version Control',
       description: 'Master Git workflow, branching, merging, and collaboration. Essential skills for every developer.',
       price: 49,
       duration: '4 weeks',
-      delay: 125,
+      delay: 175,
       curriculumData: GitCurriculumData,
       logoBackground: 'linear-gradient(135deg, #e96443 0%, #904e95 100%)',
       logoName: 'Git'
@@ -65,7 +87,7 @@ const Courses = ({ onCourseClick }) => {
       description: 'Master Python programming and dive into data analysis, machine learning, and visualization.',
       price: 99,
       duration: '16 weeks',
-      delay: 200,
+      delay: 250,
       icon: '🐍',
       logoBackground: 'linear-gradient(135deg, #3776ab 0%, #ffd43b 100%)',
       logoName: 'Python'
@@ -76,7 +98,7 @@ const Courses = ({ onCourseClick }) => {
       description: 'Design and deploy scalable cloud solutions using Amazon Web Services and DevOps practices.',
       price: 149,
       duration: '20 weeks',
-      delay: 300,
+      delay: 350,
       icon: '☁️',
       logoBackground: 'linear-gradient(135deg, #ff9900 0%, #232f3e 100%)',
       logoName: 'AWS'
@@ -87,7 +109,7 @@ const Courses = ({ onCourseClick }) => {
       description: 'Create native mobile apps for iOS and Android using React Native and Flutter frameworks.',
       price: 119,
       duration: '14 weeks',
-      delay: 400,
+      delay: 450,
       icon: '📱',
       logoBackground: 'linear-gradient(135deg, #61dafb 0%, #764ba2 100%)',
       logoName: 'React Native'
@@ -98,7 +120,7 @@ const Courses = ({ onCourseClick }) => {
       description: 'Dive into artificial intelligence, neural networks, and build intelligent applications.',
       price: 159,
       duration: '24 weeks',
-      delay: 600,
+      delay: 650,
       icon: '🤖',
       logoBackground: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%)',
       logoName: 'AI/ML'
