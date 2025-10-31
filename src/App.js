@@ -317,7 +317,7 @@ const App = () => {
           width: 80px;
           height: 80px;
           margin: 0 auto 1rem;
-          background: linear-gradient(45deg, #00f5ff, #ff00f5);
+          background: #fff;
           border-radius: 50%;
           display: flex;
           align-items: center;
