@@ -13,7 +13,8 @@ const Courses = ({ onCourseClick }) => {
       delay: 0,
       curriculumData: HTMLCurriculumData,
       logoBackground: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)',
-      logoName: 'HTML'
+      logoName: 'HTML',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg'
     },
     {
       level: 'Beginner',
@@ -24,7 +25,8 @@ const Courses = ({ onCourseClick }) => {
       delay: 50,
       curriculumData: CSSCurriculumData,
       logoBackground: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)',
-      logoName: 'CSS'
+      logoName: 'CSS',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg'
     },
     {
       level: 'Beginner',
@@ -35,7 +37,8 @@ const Courses = ({ onCourseClick }) => {
       delay: 75,
       curriculumData: JavaScriptCurriculumData,
       logoBackground: 'linear-gradient(135deg, #F7DF1E 0%, #F7DF1E 50%, #000 50%, #000 100%)',
-      logoName: 'JS'
+      logoName: 'JS',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'
     },
     {
       level: 'Beginner',
@@ -46,7 +49,7 @@ const Courses = ({ onCourseClick }) => {
       delay: 100,
       curriculumData: ReactCurriculumData,
       logoBackground: 'linear-gradient(135deg, #00d4ff 0%, #764ba2 100%)',
-      logoName: 'React'
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
     },
     {
       level: 'Intermediate',
@@ -57,7 +60,7 @@ const Courses = ({ onCourseClick }) => {
       delay: 125,
       curriculumData: NodeCurriculumData,
       logoBackground: 'linear-gradient(135deg, #339933 0%, #68a063 100%)',
-      logoName: 'Node.js'
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'
     },
     {
       level: 'Intermediate',
@@ -68,7 +71,7 @@ const Courses = ({ onCourseClick }) => {
       delay: 150,
       curriculumData: MongoDBCurriculumData,
       logoBackground: 'linear-gradient(135deg, #47a248 0%, #589636 100%)',
-      logoName: 'MongoDB'
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg'
     },
     {
       level: 'Beginner',
@@ -79,7 +82,8 @@ const Courses = ({ onCourseClick }) => {
       delay: 175,
       curriculumData: GitCurriculumData,
       logoBackground: 'linear-gradient(135deg, #e96443 0%, #904e95 100%)',
-      logoName: 'Git'
+      logoName: 'Git',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg'
     },
     {
       level: 'Intermediate',
@@ -88,9 +92,10 @@ const Courses = ({ onCourseClick }) => {
       price: 99,
       duration: '16 weeks',
       delay: 250,
-      icon: '🐍',
+      icon: '',
       logoBackground: 'linear-gradient(135deg, #3776ab 0%, #ffd43b 100%)',
-      logoName: 'Python'
+      logoName: 'Python',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg'
     },
     {
       level: 'Advanced',
@@ -99,9 +104,10 @@ const Courses = ({ onCourseClick }) => {
       price: 149,
       duration: '20 weeks',
       delay: 350,
-      icon: '☁️',
+      icon: '',
       logoBackground: 'linear-gradient(135deg, #ff9900 0%, #232f3e 100%)',
-      logoName: 'AWS'
+      logoName: 'AWS',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'
     },
     {
       level: 'Beginner',
@@ -110,9 +116,10 @@ const Courses = ({ onCourseClick }) => {
       price: 119,
       duration: '14 weeks',
       delay: 450,
-      icon: '📱',
+      icon: '',
       logoBackground: 'linear-gradient(135deg, #61dafb 0%, #764ba2 100%)',
-      logoName: 'React Native'
+      logoName: 'React Native',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
     },
     {
       level: 'Intermediate',
@@ -121,9 +128,10 @@ const Courses = ({ onCourseClick }) => {
       price: 159,
       duration: '24 weeks',
       delay: 650,
-      icon: '🤖',
+      icon: '',
       logoBackground: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%)',
-      logoName: 'AI/ML'
+      logoName: 'AI/ML',
+      logoUrl: ''
     }
   ];
 
