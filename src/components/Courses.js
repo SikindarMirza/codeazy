@@ -59,7 +59,7 @@ const Courses = ({ onCourseClick }) => {
       duration: '14 weeks',
       delay: 125,
       curriculumData: NodeCurriculumData,
-      logoBackground: 'linear-gradient(135deg, #339933 0%, #68a063 100%)',
+      logoBackground: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 30%, #dee2e6 70%, #ced4da 100%)',
       logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'
     },
     {
@@ -70,8 +70,10 @@ const Courses = ({ onCourseClick }) => {
       duration: '10 weeks',
       delay: 150,
       curriculumData: MongoDBCurriculumData,
-      logoBackground: 'linear-gradient(135deg, #47a248 0%, #589636 100%)',
-      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg'
+      // logoBackground: 'linear-gradient(135deg, #001e2b 0%, #003d5c 40%, #002a40 100%)',
+      logoBackground: 'linear-gradient(135deg,rgb(31, 76, 121) 0%,rgb(66, 114, 162) 30%,rgb(89, 130, 173) 70%,rgb(46, 97, 147) 100%)',
+      logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg',
+      textColor: '#fff'
     },
     {
       level: 'Beginner',
@@ -81,7 +83,7 @@ const Courses = ({ onCourseClick }) => {
       duration: '4 weeks',
       delay: 175,
       curriculumData: GitCurriculumData,
-      logoBackground: 'linear-gradient(135deg, #e96443 0%, #904e95 100%)',
+      logoBackground: 'linear-gradient(135deg,rgb(197, 127, 237) 0%,rgb(146, 43, 175) 55%,rgb(228, 166, 241) 100%)',
       logoName: 'Git',
       logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg'
     },
