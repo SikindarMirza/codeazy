@@ -6,16 +6,22 @@ const Contact = () => {
       name: "Sikindar Mirza",
       title: "Staff Software Engineer | Full Stack Developer | Tech Educator",
       email: "sikindar247@gmail.com",
+      phone: "+91 9550655247",
+      image: "/Sikindar_Mirza.jpg",
       linkedin: "https://www.linkedin.com/in/sikindar-mirza-802095115/",
       location: "India",
       experience: "11+ years of experience in software development",
       skills: ["JavaScript", "Python","React", "Node.js", "MongoDB", "AWS", "Docker", "Kubernetes", "CI/CD"],
-      bio: "Passionate about teaching technology and helping others learn programming. Experienced in building scalable web applications and mentoring developers.",
+      bio: "A highly experienced Staff Software Engineer with over 11 years of expertise in designing and implementing enterprise-grade applications. Passionate about creating innovative full-stack solutions that drive business impact. Combines deep technical knowledge with a genuine commitment to teaching, having guided hundreds of aspiring developers on their journey from beginner to professional through hands-on mentorship and practical, real-world projects.",
       achievements: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Mentored 50+ junior developers and conducted many technical workshops",
-        "Built scalable e-commerce platforms handling $10M+ in transactions",
-        "Built and deployed multiple web applications using React, Node.js, and MongoDB"
+        "Led multiple engineering teams in building scalable, production-grade applications using React, Node.js, and MongoDB.",
+        "Mentored 500+ developers and guided cross-functional teams, fostering a culture of continuous learning and technical excellence.",
+        // "Drove architecture decisions for enterprise-level products, ensuring performance, reliability, and maintainability at scale.",
+        "Expert in leveraging AI and Large Language Models (LLMs) to architect and deliver next-generation intelligent software systems.",
+        // "Championed Agile best practices and Test-Driven Development (TDD), resulting in faster delivery cycles and defect-free releases.",
+        "Regularly conducted advanced workshops and code reviews, empowering engineers to write cleaner, more efficient code.",
+        // "Collaborated closely with product and design teams, turning complex business challenges into intuitive technical solutions.",
+        "Recognized for strategic thinking, technical mentorship, and consistently delivering impactful solutions across domains."
       ],
       expertise: [
         { category: "Frontend", technologies: ["React", "Vue.js", "TypeScript", "Next.js"] },
@@ -30,40 +36,48 @@ const Contact = () => {
         { name: "Enroco", logo: "/enroco.jpeg" }
       ]
     },
-    // {
-    //   name: "Muhammad Umar Mirza",
-    //   title: "Staff Software Engineer | Full Stack Developer | Tech Educator",
-    //   email: "miyamirza.esc@gmail.com",
-    //   linkedin: "https://www.linkedin.com/in/muhammadumarmirza/",
-    //   location: "India",
-    //   experience: "10+ years of experience in software development",
-    //   skills: ["JavaScript", "Python","React", "Node.js", "MongoDB", "AWS", "Docker", "Kubernetes", "CI/CD"],
-    //   bio: "Passionate about teaching technology and helping others learn programming. Experienced in building scalable web applications and mentoring developers.",
-    //   achievements: [
-    //     "Led development of microservices architecture serving 1M+ users",
-    //     "Mentored 50+ junior developers and conducted many technical workshops",
-    //     "Built scalable e-commerce platforms handling $10M+ in transactions",
-    //     "Built and deployed multiple web applications using React, Node.js, and MongoDB"
-    //   ],
-    //   expertise: [
-    //     { category: "Frontend", technologies: ["React", "Vue.js", "TypeScript", "Next.js"] },
-    //     { category: "Backend", technologies: ["Node.js", "Python", "Express", "Django", "NestJS"] },
-    //     { category: "Database", technologies: ["MongoDB", "PostgreSQL", "SQL", "Elasticsearch"] },
-    //     { category: "DevOps", technologies: ["AWS", "Docker", "Kubernetes", "Jenkins"] },
-    //   ],
-    //   companies: [
-    //     { name: "Project44", logo: "/project_44_logo.jpeg" },
-    //     { name: "Conde Nast", logo: "/logos/edtech.png" },
-    //     { name: "Tesco", logo: "/logos/freelance.png" },
-    //     { name: "Enroco", logo: "/logos/consulting.png" }
-    //   ]
-    // }
+    {
+      name: "Muhammad Umar Mirza",
+      title: "Staff Software Engineer | Full Stack Developer | Tech Educator",
+      email: "miyamirza.esc@gmail.com",
+      phone: "+91 9100955247",
+      image: "/umar.jpg",
+      linkedin: "https://www.linkedin.com/in/muhammadumarmirza/",
+      location: "India",
+      experience: "10+ years of experience in software development",
+      skills: ["JavaScript", "Python","React", "Node.js", "MongoDB", "AWS", "Docker", "Kubernetes", "CI/CD"],
+      bio: "An accomplished Staff Software Engineer with a decade of hands-on experience crafting robust, scalable solutions. Specializes in full-stack development with a keen focus on modern JavaScript ecosystems, cloud architecture, and system design. Dedicated to empowering the next generation of developers through comprehensive mentorship and practical, industry-relevant education.",
+      achievements: [
+        "Architected and delivered complex full-stack applications using React, Node.js, and MongoDB — powering high-performance, scalable systems.",
+        "Led multiple teams across the full SDLC, from planning to deployment, ensuring on-time and quality delivery.",
+        "Mentored 100+ engineers through code reviews, architecture discussions, and best practice sessions in modern web development.",
+
+"Regularly conducted advanced workshops and code reviews, empowering engineers to write cleaner, more efficient code.",
+        // "Integrated microservice architectures and RESTful APIs, improving modularity and system reliability.",
+        // "Implemented CI/CD pipelines and DevOps best practices, cutting release cycles by 50%.",
+        // "Optimized frontend performance, reducing bundle size and improving load times across large-scale applications.",
+        // "Worked closely with product and design teams to build seamless, intuitive user experiences.",
+        "Passionate about teaching and sharing knowledge, bridging the gap between theory and production-grade engineering."
+      ],
+      expertise: [
+        { category: "Frontend", technologies: ["React", "Vue.js", "TypeScript", "Next.js", "NuxtJS"] },
+        { category: "Backend", technologies: ["Node.js", "Express", "NestJS"] },
+        { category: "Database", technologies: ["MongoDB", "PostgreSQL", "SQL"] },
+        { category: "DevOps", technologies: ["AWS", "Docker", "Kubernetes", "Jenkins"] },
+      ],
+      companies: [
+        { name: "Saltmine", logo: "/saltmine.svg" },
+        { name: "Livspace", logo: "/livspace.svg" },
+        { name: "kuliza", logo: "/kuliza.jpg" },
+        { name: "Kony", logo: "/kony.png" }
+      ]
+    }
   ];
 
   return (
     <section className="contact-section" id="contact">
       <div className="container">
-        <h2 className="section-title">Get in Touch</h2>
+        <h2 className="section-title">Connect with Our Experts</h2>
         <p className="contact-subtitle">Ready to start your coding journey? Let's connect!</p>
         
         <div className="contact-content">
@@ -74,7 +88,7 @@ const Contact = () => {
                   <div className="header-left">
                     <div className="profile-avatar">
                     <img 
-                      src={contactIndex === 0 ? "/Sikindar_Mirza.jpg" : "/Muhammad_Umar_Mirza.jpg"} 
+                      src={contact.image} 
                       alt={contact.name} 
                       className="profile-image"
                       onError={(e) => {
@@ -112,6 +126,12 @@ const Contact = () => {
                         <span className="detail-icon">📧</span>
                         <a href={`mailto:${contact.email}`}>{contact.email}</a>
                       </div>
+                      {contact.phone && (
+                        <div className="detail-item">
+                          <span className="detail-icon">📱</span>
+                          <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a>
+                        </div>
+                      )}
                       <div className="detail-item">
                         <span className="detail-icon">💼</span>
                         <span>{contact.experience}</span>
@@ -232,6 +252,7 @@ const Contact = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          flex-direction: column;
           gap: 1.5rem;
           margin-bottom: 2rem;
         }
@@ -444,8 +465,10 @@ const Contact = () => {
 
         .companies-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+          grid-template-columns: repeat(2, 1fr);
           gap: 1rem;
+          align-items: start;
+          justify-items: center;
         }
 
         .company-item {
@@ -453,6 +476,7 @@ const Contact = () => {
           flex-direction: column;
           align-items: center;
           gap: 0.5rem;
+          width: 100%;
         }
 
         .company-logo,
@@ -570,17 +594,27 @@ const Contact = () => {
           .profile-info { flex: 1; min-width: 0; }
           /* Companies grid: 2 per row and smaller logos */
           .companies-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 0.75rem;
+            justify-items: center;
+            align-items: start;
           }
-          .company-item { gap: 0.4rem; }
+          .company-item { 
+            gap: 0.4rem;
+            width: 100%;
+            max-width: 160px;
+          }
           .company-logo,
           .company-logo-fallback {
             width: 100%;
             height: 68px;
             border-radius: 8px;
+            object-fit: contain;
           }
-          .company-name { font-size: 0.8rem; }
+          .company-name { 
+            font-size: 0.8rem;
+            text-align: center;
+          }
         }
       `}</style>
     </section>
