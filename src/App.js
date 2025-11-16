@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import InquiryBanner from './components/InquiryBanner';
 import DemoModal from './components/DemoModal';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -13,6 +14,7 @@ const App = () => {
   const [demoOpen, setDemoOpen] = useState(false);
   const [curriculumPanelOpen, setCurriculumPanelOpen] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
+  const [bannerVisible, setBannerVisible] = useState(false);
 
 
   const handleDemoOpen = () => {
@@ -50,8 +52,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <InquiryBanner onVisibilityChange={setBannerVisible} />
       {/* <Navbar goToCart={goToCart} /> */}
-      <Navbar/>
+      <Navbar hasBanner={bannerVisible} />
       <Hero onDemo={handleDemoOpen} />
         <>
           <Features />
@@ -91,10 +94,17 @@ const App = () => {
           width: 100%;
           background: rgba(10, 10, 10, 0.9);
           backdrop-filter: blur(20px);
-          z-index: 1000;
+          z-index: 2000;
           padding: 1rem 0;
           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
           transition: all 0.3s ease;
+        }
+        .navbar.has-banner {
+          top: 57px !important;
+          transition: top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        body.has-banner {
+          padding-top: 48px;
         }
         .navbar.scrolled {
           background: rgba(10, 10, 10, 0.95);
