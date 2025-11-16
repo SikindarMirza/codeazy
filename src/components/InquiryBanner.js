@@ -39,7 +39,6 @@ const InquiryBanner = ({ onVisibilityChange }) => {
   // Measure banner height and notify navbar
   useEffect(() => {
     if (shouldShow && bannerRef.current && onVisibilityChange) {
-      const height = bannerRef.current.offsetHeight;
       onVisibilityChange(true);
       // Pass height if needed for dynamic adjustment
     }
@@ -195,4 +194,3 @@ const InquiryBanner = ({ onVisibilityChange }) => {
 };
 
 export default InquiryBanner;
-
