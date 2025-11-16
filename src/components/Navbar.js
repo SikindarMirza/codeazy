@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ hasBanner = false }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${hasBanner ? 'has-banner' : ''}`}>
       <div className="nav-container">
         <div className="logo">Codeazy</div>
         <ul className="nav-links">
